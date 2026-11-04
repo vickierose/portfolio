@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <section
-        className="relative grid gap-11 pt-10 pb-8 lg:min-h-140 lg:grid-cols-[67%_33%] lg:gap-0 md:py-16 xl:pt-22"
+        className="relative grid gap-11 pt-10 pb-8 lg:min-h-140 md:grid-cols-[67%_33%] md:gap-0 md:pt-22 lg:py-16 xl:pt-22"
         aria-labelledby="intro-title"
       >
         <div className="min-w-0">
@@ -26,9 +26,9 @@ export default function Home() {
             Learn more
           </Link>
         </div>
-        <div className="relative flex min-h-102 items-center justify-center self-stretch md:-ml-4 md:min-h-0 md:justify-start">
+        <div className="relative flex min-h-102 items-center justify-center self-stretch md:-ml-4 md:min-h-0 md:justify-start md:items-start lg:items-center">
           <svg
-            className="pointer-events-none absolute top-[-8%] left-0 h-[115%] w-full overflow-visible stroke-foreground md:top-[-11%] md:left-[-27%] md:w-[130%]"
+            className="pointer-events-none absolute top-[-8%] left-0 h-[115%] w-full overflow-visible stroke-foreground md:top-[-20%] md:left-[-28%] md:w-[140%] lg:top-[-11%] lg:left-[-27%] lg:w-[130%]"
             viewBox="0 0 400 480"
             fill="none"
             aria-hidden="true"
