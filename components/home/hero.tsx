@@ -1,32 +1,51 @@
-import Link from "../ui/link";
-import Specialties from "./specialties";
+﻿import Image from "next/image";
+import Link from "@/components/ui/link";
+import illustration from "@/public/illustration.png";
 
-function Hero() {
+export default function Hero() {
   return (
     <section
-      className="relative grid gap-11 pt-10 pb-8 lg:min-h-140 md:grid-cols-[67%_33%] md:gap-0 md:pt-22 lg:py-16 xl:pt-22"
+      className="relative isolate overflow-hidden py-10 md:py-12"
       aria-labelledby="intro-title"
     >
-      <div className="min-w-0">
-        <h1
-          id="intro-title"
-          className="relative z-1 mb-7 -ml-1 text-[clamp(52px,12.8vw,88px)] leading-[.91] font-[750] tracking-[-.075em] md:mb-9 md:text-[clamp(64px,11vw,140px)]"
-        >
-          Viktoriia
-          <br />
-          Chernyshuk
-        </h1>
-        <p className="mb-8 text-[clamp(23px,5.3vw,34px)] leading-[1.12] font-medium tracking-[-.045em] md:text-[clamp(25px,3.9vw,49px)]">
-          I turn complex product ideas into
-          <br /> clear, expressive interfaces.
-        </p>
-        <Link variant="cta" href="/about">
-          Learn more
-        </Link>
+      <Image
+        className="pointer-events-none absolute right-[-40%] -z-10 h-auto w-full select-none top-full -translate-y-full rotate-45 sm:right-[-25%] sm:w-4/5 md:translate-0 md:rotate-0 md:top-0 md:-right-3 md:w-3/5"
+        src={illustration}
+        alt=""
+        preload
+        sizes="(min-width: 1152px) 615px, (min-width: 768px) 60vw, 100vw"
+      />
+      <div className="grid gap-8 md:grid-cols-12 md:gap-6">
+        <div className="min-w-0 md:col-span-7">
+          <p className="mb-6 font-mono text-xs uppercase md:mb-8 md:text-sm">
+            Frontend engineer / creative mind
+          </p>
+          <h1
+            id="intro-title"
+            className="mb-6 text-[clamp(48px,13vw,88px)] leading-[.94] font-extrabold tracking-[-.065em] md:text-[clamp(64px,9vw,100px)] md:mb-8"
+          >
+            Viktoriia
+            <br />
+            Chernyshuk
+          </h1>
+          <p className="mb-6 text-xl leading-snug font-medium tracking-tight md:whitespace-nowrap md:text-2xl">
+            An eye for detail. <br className="sm:hidden" />A head for
+            complexity.
+          </p>
+          <Link variant="cta" href="/about">
+            Learn more
+          </Link>
+        </div>
+        <div className="max-w-md self-end md:justify-self-end md:col-span-5">
+          <p className="flex items-center gap-2 font-mono text-xs uppercase">
+            <span
+              className="size-3 shrink-0 rounded-full border border-muted bg-accent"
+              aria-hidden="true"
+            />
+            Available for new projects
+          </p>
+        </div>
       </div>
-      <Specialties />
     </section>
   );
 }
-
-export default Hero;
