@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
+import Contact from "@/components/layout/contact";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,7 +17,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Viktoriia Chernyshuk — Frontend & Design",
-  description: "Frontend engineering, UI and interaction design, and creative development. Turning complex product ideas into clear, expressive interfaces.",
+  description:
+    "Frontend engineering, UI and interaction design, and creative development. Turning complex product ideas into clear, expressive interfaces.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -27,15 +29,20 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col">
         <div className="mx-auto flex min-h-screen w-full max-w-6xl flex-col px-4 sm:px-8 lg:px-16">
-          <a className="absolute -top-25 focus:top-3 focus:z-10 focus:bg-accent focus:p-3" href="#main">Skip to content</a>
+          <a
+            className="absolute -top-25 focus:top-3 focus:z-10 focus:bg-accent focus:p-3"
+            href="#main"
+          >
+            Skip to content
+          </a>
           <Header />
-          <main className="flex-1" id="main">{children}</main>
+          <main className="flex-1" id="main">
+            {children}
+          </main>
+          <Contact />
           <Footer />
         </div>
       </body>
     </html>
   );
 }
-
-
-

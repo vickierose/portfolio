@@ -5,11 +5,11 @@ import illustration from "@/public/illustration.png";
 export default function Hero() {
   return (
     <section
-      className="relative isolate overflow-hidden py-10 md:py-12"
+      className="relative isolate overflow-hidden py-10 md:py-16"
       aria-labelledby="intro-title"
     >
       <Image
-        className="pointer-events-none absolute right-[-40%] -z-10 h-auto w-full select-none top-full -translate-y-full rotate-45 sm:right-[-25%] sm:w-4/5 md:translate-0 md:rotate-0 md:top-0 md:-right-3 md:w-3/5"
+        className="pointer-events-none absolute object-cover top-0 -right-3 -z-10 h-100 w-130 select-none opacity-35 mask-[linear-gradient(to_right,transparent,black_45%)] md:h-auto md:w-3/4 md:top-[-5%] md:opacity-100 md:mask-none lg:top-[-7%]"
         src={illustration}
         alt=""
         preload
