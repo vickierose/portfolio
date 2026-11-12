@@ -5,15 +5,15 @@ import illustration from "@/public/illustration.png";
 export default function Hero() {
   return (
     <section
-      className="relative isolate overflow-hidden py-10 md:py-16"
+      className="relative isolate py-10 md:py-16"
       aria-labelledby="intro-title"
     >
       <Image
-        className="pointer-events-none absolute object-cover top-0 -right-3 -z-10 h-100 w-130 select-none opacity-35 mask-[linear-gradient(to_right,transparent,black_45%)] md:h-auto md:w-3/4 md:top-[-5%] md:opacity-100 md:mask-none lg:top-[-7%]"
+        className="hero-illustration pointer-events-none absolute top-0 -right-12 -z-10 h-100 w-130 max-w-none object-cover select-none opacity-35 md:-right-16 md:top-[-5%] md:h-auto md:w-3/4 md:max-w-200 md:opacity-100 lg:top-[-7%]"
         src={illustration}
         alt=""
         preload
-        sizes="(min-width: 1152px) 615px, (min-width: 768px) 60vw, 100vw"
+        sizes="(min-width: 1200px) 800px, (min-width: 768px) 75vw, 520px"
       />
       <div className="grid gap-8 md:grid-cols-12 md:gap-6">
         <div className="min-w-0 md:col-span-7">

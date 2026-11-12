@@ -3,7 +3,7 @@
 export default function Contact() {
   return (
     <section
-      className="flex flex-col items-start justify-between gap-8 border-t py-10 md:flex-row md:items-center md:py-12"
+      className="flex flex-col items-start justify-between gap-8 border-t-2 py-10 md:flex-row md:items-center md:py-12"
       id="contact"
       aria-labelledby="contact-title"
     >

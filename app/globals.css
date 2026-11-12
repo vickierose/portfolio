@@ -26,7 +26,7 @@
 
 @layer base {
   html {
-    @apply scroll-smooth scroll-pt-8 motion-reduce:scroll-auto;
+    @apply overflow-x-clip scroll-smooth scroll-pt-8 motion-reduce:scroll-auto;
   }
 
   body {
@@ -41,4 +41,11 @@
   summary:focus-visible {
     @apply outline-3 outline-offset-6 outline-foreground;
   }
+}
+
+.hero-illustration {
+  mask-image:
+    linear-gradient(to right, transparent, black 35%, black 75%, transparent),
+    linear-gradient(to bottom, transparent, black 10%, black 75%, transparent);
+  mask-composite: intersect;
 }

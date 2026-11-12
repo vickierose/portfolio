@@ -18,7 +18,7 @@ export default function AboutSection({
   return (
     <section
       aria-labelledby={`${id}-title`}
-      className="grid gap-8 border-t py-12 md:grid-cols-[minmax(0,336fr)_minmax(0,528fr)] md:gap-8"
+      className="grid gap-8 border-t-2 py-12 md:grid-cols-[minmax(0,336fr)_minmax(0,528fr)] md:gap-8"
     >
       <div>
         <p className="mb-6 font-mono text-xs uppercase md:text-sm">{label}</p>

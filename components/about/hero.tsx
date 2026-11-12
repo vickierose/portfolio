@@ -8,15 +8,15 @@ export default function AboutHero() {
       className="relative isolate py-12 md:pt-16"
     >
       <div
-        className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
+        className="pointer-events-none absolute inset-0 -z-10"
         aria-hidden="true"
       >
         <Image
           src={illustration}
           alt=""
           preload
-          sizes="(min-width: 768px) 640px, 100vw"
-          className="absolute -right-64 top-0 h-120 w-160 max-w-none object-cover opacity-35 [mask-image:linear-gradient(to_right,transparent,black_45%)] md:-right-52 md:h-125 md:opacity-100"
+          sizes="640px"
+          className="hero-illustration absolute -right-64 top-0 h-120 w-160 max-w-none object-cover opacity-35 md:-right-52 md:h-125 md:opacity-100"
         />
       </div>
       <p className="mb-8 font-mono text-xs uppercase md:text-sm">

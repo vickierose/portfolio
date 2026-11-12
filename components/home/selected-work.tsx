@@ -5,7 +5,7 @@ import dreamArchivePreview from "@/public/dream-archive-preview.png";
 export default function SelectedWork() {
   return (
     <section
-      className="border-t py-10 md:py-12"
+      className="border-t-2 py-10 md:py-12"
       aria-labelledby="selected-work-title"
     >
       <h2 id="selected-work-title" className="mb-8 font-mono text-sm uppercase">

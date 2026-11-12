@@ -6,10 +6,15 @@ export default function SocialLinks() {
       <Link
         variant="social"
         href="https://www.linkedin.com/in/viktoriia-chernyshuk-398a21145/"
+        target="_blank"
       >
         LinkedIn
       </Link>
-      <Link variant="social" href="https://github.com/vickierose">
+      <Link
+        variant="social"
+        href="https://github.com/vickierose"
+        target="_blank"
+      >
         GitHub
       </Link>
       <Link variant="social" href="/#contact">
